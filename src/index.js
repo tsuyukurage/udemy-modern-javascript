@@ -96,6 +96,36 @@ console.log(arr7)
 
 // 配列のコピーの注意 
 const arr8 = arr4; //　同じ参照になる
-console.log("arr8: ", arr8);
+console.log("arr8:", arr8);
 arr8[0] = 100;
-console.log("arr4: ", arr4);
+console.log("arr4:", arr4);
+
+/** map, filterでの配列処理 */
+const nameArray = ["kurage", "penguin", "seal"];
+nameArray.map((name) => {
+  console.log("map:",name);
+});
+
+const nameArray2 = nameArray.map((name) => {
+  return name;
+});
+console.log(nameArray2);
+
+nameArray.map((name, index) => {
+  console.log(`${index + 1}番目は${name}です`)
+});
+
+const numArray = [1, 2, 3, 4, 5];
+const numArray2 = numArray.filter((num) => {
+  return num % 2 === 1;
+});
+console.log(numArray2);
+
+const newNameArray = nameArray.map((name) => {
+  if (name == "kurage") {
+    return name;
+  } else {
+    return `${name}さん`;
+  }
+});
+console.log(newNameArray)
