@@ -70,4 +70,32 @@ console.log(message3);
 const sayHello = (name = "sekai") => console.log(`こんにちは、${name}`);
 sayHello(); // デフォルト値が呼び出される
 
-/** スプレット構文 */
+/** スプレット構文 ... */
+// 配列の展開
+const arr1 = [2, 27];
+console.log(arr1);
+console.log(...arr1);
+
+const sumFunc = (num1, num2) => console.log(num1 + num2);
+sumFunc(...arr1);
+
+// まとめる
+const arr2 = [2, 3, 4, 5, 6];
+const [num1, num2, ...arr3] = arr2;
+console.log(arr3);
+
+// 配列のコピー、結合
+const arr4 = [10, 20];
+const arr5 = [30, 40];
+
+const arr6 = [...arr4];
+console.log(arr6);
+
+const arr7 = [...arr6, ...arr5];
+console.log(arr7)
+
+// 配列のコピーの注意 
+const arr8 = arr4; //　同じ参照になる
+console.log("arr8: ", arr8);
+arr8[0] = 100;
+console.log("arr4: ", arr4);
