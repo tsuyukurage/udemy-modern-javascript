@@ -144,3 +144,25 @@ const checkSum = (num1, num2) => {
   return num1 + num2 > 100 ? "100を超えています。" : "100以内です。";
 };
 console.log(checkSum(70, 20));
+
+/** 論理演算子 && || */
+// truthy falsyについて
+// "ABC" 0 10 undefined null false NaN "" [] {}
+const values = ["ABC", 0, 10, undefined, null, false, NaN, "", [], {}];
+for (let val of values) {
+  if (val) {
+    console.log(val + "> truthyです")
+  } else {
+    console.log(val + "> falsyです")
+  }
+}
+
+// || は最初にtruthyのものを返却する
+const valued = false;
+const fee = valued || "金額未設定です"
+console.log(fee);
+
+// && は左側がfalsyの時その時点で返却する
+const valued2 = 100;
+const fee2 = valued2 && "何か設定されました";
+console.log(fee2);
