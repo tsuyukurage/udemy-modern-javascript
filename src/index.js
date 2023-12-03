@@ -128,4 +128,19 @@ const newNameArray = nameArray.map((name) => {
     return `${name}さん`;
   }
 });
-console.log(newNameArray)
+console.log(newNameArray);
+
+/** 三項演算子 ? : */
+// 条件 ? true処理 : falseの処理
+
+const val6 = 1 > 0 ? "true" : "false";
+console.log(val6);
+
+const num3 = 1300;
+console.log(num3.toLocaleString()); // 数値をカンマ区切りにする
+const formattedNum = typeof num3 === 'number' ? num3.toLocaleString : "数値を入力してください";
+
+const checkSum = (num1, num2) => {
+  return num1 + num2 > 100 ? "100を超えています。" : "100以内です。";
+};
+console.log(checkSum(70, 20));
