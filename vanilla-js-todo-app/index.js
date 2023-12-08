@@ -1,7 +1,7 @@
 
 const onClickAdd = () => {
-  const inputText = dcument.getElementById("add-text").value;
+  const inputText = document.getElementById("add-text").value;
   alert(inputText);
 };
 
-document.getElementById("add-button").addEventListener("click", onClickAdd());
+document.getElementById("add-button").addEventListener("click", onClickAdd);
