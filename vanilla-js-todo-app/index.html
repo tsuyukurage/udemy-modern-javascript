@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
+  <title>JavaScript TODO App</title>
 </head>
 <body>
   <div class="input-area">
@@ -15,24 +15,13 @@
   <div class="incomplete-area">
     <p class="title">未完了のTODO</p>
     <ul id="incomplete-list">
-      <li>
-        <div class="list-row">
-          <p class="todo-item">TODOです</p>
-          <button>完了</button>
-          <button>削除</button>
-        </div>
-      </li>
+      <!-- 作成したTODOが入る -->
     </ul>
   </div>
   <div class="complete-area">    
     <p class="title">完了のTODO</p>
-    <ul>
-      <li>
-        <div class="list-row">
-          <p class="todo-item">TODOでした</p>
-          <button>戻す</button>
-        </div>
-      </li>
+    <ul id="complete-list">
+      <!-- 完了したTODOが入る -->
     </ul>
 </div>
 <script src="./index.js"></script>
