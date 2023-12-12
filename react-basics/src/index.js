@@ -7,18 +7,9 @@ import { render } from '@testing-library/react';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const AppHoge = () => {
-  return (
-    <>
-      <h1>こんにちは</h1>
-      <p>お元気ですか</p>
-    </>
-  )
-}
-
 root.render(
   <React.StrictMode>
-    {/* <App /> */}<AppHoge />
+    <App />
   </React.StrictMode>
 );
 
