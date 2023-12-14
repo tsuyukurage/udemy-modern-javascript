@@ -1,16 +1,13 @@
 import './App.css';
+import { ColorfulMessage } from './conponents/ColorfulMessage';
 
 function App() {
   const onClickBtn = () => alert();
-  const contentStyle = { 
-    color: "lightskyblue",
-    fontSize: "18px",
-    margin: 100
-  };
   return (
     <>
       <h1 style={{ color: "lightcoral" }}>Hello</h1>
-      <p style={contentStyle}>What's up?</p>
+      <ColorfulMessage color="lightskyblue">What's up?</ColorfulMessage>
+      <ColorfulMessage color="lightgreen">Awsome!</ColorfulMessage>
       <button onClick={onClickBtn}>ボタン</button>
     </>
   );
