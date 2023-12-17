@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ColorfulMessage } from './conponents/ColorfulMessage';
+import Default from './conponents/DefaultImport';
 
 function App() {
   console.log('--App--');
@@ -34,7 +35,7 @@ function App() {
       <p>{num}</p>
       <button onClick={onClickToggle}>on/off</button>
       {isShowCat && <p>(=^ェ^=)</p>}
-      
+      <Default></Default>
     </>
   );
 }
