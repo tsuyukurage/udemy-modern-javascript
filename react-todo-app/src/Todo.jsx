@@ -13,7 +13,7 @@ export const Todo = () => {
         <ul>
           <li>
             <div className='list-row'>
-            <p className='todo-item'>TODOです。</p>
+            <p className='todo-item'>TODOです</p>
             <button>完了</button>
             <button>削除</button>
             </div>
