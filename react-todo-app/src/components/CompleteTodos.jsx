@@ -5,7 +5,7 @@ const style = {
   padding: "8px",
   margin: "8px",
   borderRadius: "8px",
-  backgroundColor: "#c9dede"
+  backgroundColor: "#c9dedd"
 };
 
 export const CompleteTodos = (props) => {
